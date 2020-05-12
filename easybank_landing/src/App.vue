@@ -1,19 +1,24 @@
 <template>
   <div id="app">
-    <navigation />
+    <NavBar :requestBtn="requestText" />
     <attribution />
   </div>
 </template>
 
 <script>
-import navigation from "./components/navigation.vue";
+import NavBar from "./components/NavBar.vue";
 import attribution from "./components/attribution.vue";
 
 export default {
   name: "App",
   components: {
-    navigation,
+    NavBar,
     attribution
+  },
+  data: function() {
+    return {
+      requestText: "Request Invite"
+    };
   }
 };
 </script>
