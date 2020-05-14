@@ -36,15 +36,32 @@ export default {
   width: 100%;
   overflow: hidden;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5));
-  opacity: 0%;
+  opacity: 0;
   visibility: hidden;
   z-index: -1;
   transition: ease 0.3s;
 
   &.active {
-    opacity: 100%;
+    opacity: 1;
     visibility: visible;
     z-index: 1;
+  }
+
+  @media screen and (min-width: 768px) {
+    top: 80px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    visibility: visible;
+    opacity: 1;
+    background: initial;
+    position: initial;
+    top: initial;
+    left: initial;
+    z-index: initial;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 
@@ -56,11 +73,28 @@ export default {
     padding: 1em 0;
     margin: 1em;
     border-radius: 8px;
+
+    @media screen and (min-width: 1024px) {
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  &__menu-list {
+    @media screen and (min-width: 1024px) {
+      display: flex;
+      justify-content: center;
+    }
   }
 
   &__link {
     list-style: none;
     padding: 1em;
+
+    @media screen and (min-width: 1024px) {
+      font-size: 15px;
+      padding: 8px;
+    }
 
     a {
       color: hsl(233, 26%, 24%);

@@ -13,7 +13,7 @@
 import NavMenu from "./NavMenu.vue";
 
 export default {
-  name: "navigation",
+  name: "NavBar",
   components: {
     NavMenu
   },
@@ -35,10 +35,13 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: white;
   padding: 0 1em;
   height: 64px;
-  position: sticky;
+  position: sticky; // want to change this
   top: 0;
+  width: 100%;
+  overflow: hidden;
   z-index: 10;
 
   @media screen and (min-width: 768px) {
