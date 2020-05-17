@@ -111,14 +111,6 @@ export default {
 }
 
 .request-btn {
-  display: none;
-  height: 48px;
-  width: 164px;
-  border-style: none;
-  border-radius: 2em;
-  background: linear-gradient(90deg, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
-  color: hsl(0, 0%, 100%);
-
   @media screen and (min-width: 1024px) {
     display: block;
   }

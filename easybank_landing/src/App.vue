@@ -2,7 +2,7 @@
   <div id="app">
     <NavBar :requestBtn="requestText" />
     <main>
-      <IntroSection />
+      <IntroSection :requestBtn="requestText" />
       <attribution />
     </main>
   </div>
@@ -53,12 +53,23 @@ main {
 }
 
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Public Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   max-width: 1440px;
   position: relative;
   text-align: center;
-  color: #2c3e50;
+}
+
+.request-btn {
+  display: none;
+  font-family: "Public Sans", sans-serif;
+  height: 48px;
+  width: 155px;
+  border-style: none;
+  border-radius: 2em;
+  background: linear-gradient(90deg, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
 }
 </style>
