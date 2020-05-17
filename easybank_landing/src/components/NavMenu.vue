@@ -35,7 +35,7 @@ export default {
   height: 100%;
   width: 100%;
   overflow: hidden;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5));
+  background: linear-gradient(hsl(233, 26%, 24%, 1), hsl(220, 16%, 96%, 0.2));
   opacity: 0;
   visibility: hidden;
   z-index: -1;

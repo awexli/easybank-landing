@@ -1,15 +1,11 @@
 <template>
   <div class="intro">
     <div class="intro__right">
-      <img
-        src="../assets/image-mockups.png"
-        alt="Mockups"
-        class="intro__mock"
-      />
+      <img src="../assets/image-mockups.png" alt="Mockups" class="intro__mock" />
     </div>
     <div class="intro__left">
-      <h1 class="intro__title">Next generation digital banking</h1>
-      <p class="intro__description">
+      <h1 class="intro__title --title">Next generation digital banking</h1>
+      <p class="intro__description --sub">
         Take your financial life online. Your Easybank account will be a
         one-stop-shop for spending, saving, budgeting, investing, and much more.
       </p>
@@ -36,8 +32,11 @@ export default {
 
 <style lang="scss" scoped>
 .intro {
+  padding-bottom: 80px;
+
   @media screen and (min-width: 1024px) {
     display: flex;
+    padding-bottom: 0;
   }
 
   &__right {
@@ -106,14 +105,8 @@ export default {
     }
   }
 
-  &__title {
-    color: $dark-blue;
-  }
-
   &__description {
-    margin-top: 1em;
-    font-size: 14px;
-    color: $gray-blue;
+    margin-top: 1.5em;
 
     @media screen and (max-width: 320px) {
       text-align: justify;
@@ -122,7 +115,7 @@ export default {
 }
 
 .request-btn {
-  margin-top: 1em;
+  margin-top: 2em;
   font-weight: 600;
   display: block;
 }
