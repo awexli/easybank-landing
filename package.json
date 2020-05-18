@@ -8,7 +8,9 @@
     "not dead"
   ],
   "babel": {
-    "presets": ["@vue/cli-plugin-babel/preset"]
+    "presets": [
+      "@vue/cli-plugin-babel/preset"
+    ]
   },
   "scripts": {
     "serve": "vue-cli-service serve",

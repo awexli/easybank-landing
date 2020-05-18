@@ -62,8 +62,10 @@ export default {
 
 <style lang="scss" scoped>
 .mid {
-  width: 100%;
   background-color: $light-gray-blue;
+  width: 100%;
+  position: relative;
+  z-index: 1;
 
   &__top {
     padding: 2em 2em 0 2em;

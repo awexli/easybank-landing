@@ -12,7 +12,7 @@
 
 <script>
 export default {
-  name: "attribution"
+  name: "FooterAttribute"
 };
 </script>
 

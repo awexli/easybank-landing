@@ -4,7 +4,7 @@
     <main>
       <IntroSection :requestBtn="requestText" />
       <MidSection />
-      <attribution />
+      <FooterAttribute />
     </main>
   </div>
 </template>
@@ -13,7 +13,7 @@
 import NavBar from "./components/NavBar.vue";
 import IntroSection from "./components/IntroSection.vue";
 import MidSection from "./components/MidSection.vue";
-import attribution from "./components/attribution.vue";
+import FooterAttribute from "./components/FooterAttribute.vue";
 
 export default {
   name: "App",
@@ -21,7 +21,7 @@ export default {
     NavBar,
     IntroSection,
     MidSection,
-    attribution
+    FooterAttribute
   },
   data: function() {
     return {
@@ -58,6 +58,7 @@ body {
   max-width: 1440px;
   position: relative;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 .request-btn {

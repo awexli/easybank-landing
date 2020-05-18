@@ -32,7 +32,9 @@ export default {
 
 <style lang="scss" scoped>
 .intro {
+  background: white;
   padding-bottom: 80px;
+
   @media screen and (min-width: 1024px) {
     display: flex;
     padding-bottom: 0;
@@ -51,7 +53,35 @@ export default {
     order: 1;
 
     @media screen and (min-width: 1024px) {
+      background: initial;
+      background-repeat: initial;
+      background-position: initial;
+      background-size: initial;
+      position: initial;
+      top: initial;
+      left: initial;
+      right: initial;
       position: relative;
+      height: 460px;
+
+      &::before {
+        content: url(../assets/bg/bg-intro-desktop.svg);
+        width: 100%;
+        position: absolute;
+        top: -260px;
+        left: 0;
+        right: 0;
+      }
+    }
+
+    @media screen and (min-width: 1440px) {
+      order: 1;
+      width: 90%;
+      height: 660px;
+
+      &::before {
+        left: -20px;
+      }
     }
   }
 
@@ -72,6 +102,29 @@ export default {
 
     @media screen and (min-width: 768px) {
       max-height: 720px;
+    }
+
+    @media screen and (min-width: 1024px) {
+      position: absolute;
+      top: -19%;
+      left: 90px;
+      max-height: initial;
+      z-index: 2;
+    }
+
+    @media screen and (min-width: 1200px) {
+      top: -45%;
+      left: 110px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      top: -60%;
+      left: 120px;
+    }
+
+    @media screen and (min-width: 1440px) {
+      top: -125px;
+      left: 155px;
     }
   }
 
@@ -100,7 +153,28 @@ export default {
     }
 
     @media screen and (min-width: 1024px) {
-      padding: 0;
+      padding: 0 0 0 5em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      text-align: start;
+      width: 70%;
+    }
+
+    @media screen and (min-width: 1280px) {
+      padding: 0 0 0 160px;
+      width: 65%;
+    }
+  }
+
+  &__title {
+    @media screen and (min-width: 1024px) {
+      font-size: 2.5em;
+    }
+
+    @media screen and (min-width: 1440px) {
+      font-size: 3em;
     }
   }
 
@@ -109,6 +183,11 @@ export default {
 
     @media screen and (max-width: 320px) {
       text-align: justify;
+    }
+
+    @media screen and (min-width: 1440px) {
+      font-size: 1em;
+      padding-right: 1em;
     }
   }
 }
