@@ -40,7 +40,6 @@ export default {
   height: 64px;
   position: sticky; // want to change this
   top: 0;
-  width: 100%;
   overflow: hidden;
   z-index: 10;
 

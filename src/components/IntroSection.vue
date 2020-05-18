@@ -1,7 +1,7 @@
 <template>
   <div class="intro">
     <div class="intro__right">
-      <img src="../assets/image-mockups.png" alt="Mockups" class="intro__mock" />
+      <img src="../assets/image/image-mockups.png" alt="Mockups" class="intro__mock" />
     </div>
     <div class="intro__left">
       <h1 class="intro__title --title">Next generation digital banking</h1>
@@ -33,14 +33,13 @@ export default {
 <style lang="scss" scoped>
 .intro {
   padding-bottom: 80px;
-
   @media screen and (min-width: 1024px) {
     display: flex;
     padding-bottom: 0;
   }
 
   &__right {
-    background: url(../assets/bg-intro-mobile.svg);
+    background: url(../assets/bg/bg-intro-mobile.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

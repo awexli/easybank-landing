@@ -47,20 +47,17 @@ body {
 
 body {
   font-size: 18px;
-  display: flex;
-  justify-content: center;
-}
-
-main {
-  max-width: 1440px;
+  position: relative;
 }
 
 #app {
   font-family: "Public Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  position: relative;
   text-align: center;
+  max-width: 1440px;
+  position: relative;
+  margin: 0 auto;
 }
 
 .request-btn {

@@ -2,6 +2,14 @@
   "name": "easybank_landing",
   "version": "0.1.0",
   "private": true,
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "babel": {
+    "presets": ["@vue/cli-plugin-babel/preset"]
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
