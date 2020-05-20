@@ -38,7 +38,8 @@ export default {
   background: white;
   padding: 0 1em;
   height: 64px;
-  position: sticky; // want to change this
+  position: fixed;
+  width: 100%; // issue with viewports larger than 1440px
   top: 0;
   overflow: hidden;
   z-index: 10;

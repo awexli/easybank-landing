@@ -35,15 +35,15 @@ export default {
   height: 100%;
   width: 100%;
   overflow: hidden;
-  background: linear-gradient(hsl(233, 26%, 24%, 1), hsl(220, 16%, 96%, 0.2));
-  opacity: 0;
   visibility: hidden;
-  z-index: -1;
+  opacity: 0;
   transition: ease 0.3s;
+  z-index: -1;
+  background: linear-gradient(hsl(233, 26%, 24%, 1), hsl(220, 16%, 96%, 0.2));
 
   &.active {
-    opacity: 1;
     visibility: visible;
+    opacity: 1;
     z-index: 1;
   }
 
