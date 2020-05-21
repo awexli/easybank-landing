@@ -53,6 +53,7 @@ export default {
     order: 1;
 
     @media screen and (min-width: 1024px) {
+      // revert everything to default
       background: initial;
       background-repeat: initial;
       background-position: initial;
@@ -132,7 +133,7 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 90%;
+    padding-top: 110%;
     padding-left: 5%;
     padding-right: 5%;
     order: 0;
@@ -142,14 +143,17 @@ export default {
       padding-right: 1em;
     }
 
-    @media screen and (min-width: 580px) and (max-width: 767px) {
-      padding-top: 80%;
+    @media screen and (min-width: 580px) {
+      padding-top: 95%;
     }
 
     @media screen and (min-width: 768px) {
-      padding-top: 75%;
       padding-left: 15%;
       padding-right: 15%;
+    }
+
+    @media screen and (min-width: 850px) {
+      padding-top: 85%;
     }
 
     @media screen and (min-width: 1024px) {

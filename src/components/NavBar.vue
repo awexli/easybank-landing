@@ -39,7 +39,8 @@ export default {
   padding: 0 1em;
   height: 64px;
   position: fixed;
-  width: 100%; // issue with viewports larger than 1440px
+  width: inherit;
+  max-width: inherit;
   top: 0;
   overflow: hidden;
   z-index: 10;
