@@ -28,6 +28,7 @@ body {
   position: relative;
   margin: 0 auto;
   overflow-x: hidden;
+  background: $light-gray;
 }
 
 .request-btn {
@@ -45,6 +46,37 @@ body {
 .--title {
   color: $dark-blue;
   font-weight: 400;
+}
+
+.pd-arch {
+  padding: 2em 2em 0 2em;
+
+  @media screen and (min-width: 768px) {
+    padding: 5em 5em 0 5em;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding: 110px 160px 0 160px;
+  }
+}
+
+.card-struct {
+  margin-top: 3em;
+  padding: 0 2em 0 2em;
+
+  @media screen and (min-width: 600px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2em;
+    text-align: justify;
+    padding: 0 5em 0 5em;
+  }
+
+  @media screen and (min-width: 1280px) {
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0 160px 0 160px;
+    text-align: start;
+  }
 }
 
 .--sub {

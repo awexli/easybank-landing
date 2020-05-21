@@ -32,7 +32,6 @@ export default {
 
 <style lang="scss" scoped>
 .intro {
-  background: white;
   padding-bottom: 80px;
 
   @media screen and (min-width: 1024px) {
@@ -77,10 +76,11 @@ export default {
 
     @media screen and (min-width: 1440px) {
       order: 1;
-      width: 90%;
-      height: 660px;
+      width: 87%;
+      height: 750px;
 
       &::before {
+        top: -180px;
         left: -20px;
       }
     }
@@ -124,7 +124,7 @@ export default {
     }
 
     @media screen and (min-width: 1440px) {
-      top: -125px;
+      top: -40px;
       left: 155px;
     }
   }
@@ -167,7 +167,7 @@ export default {
     }
 
     @media screen and (min-width: 1280px) {
-      padding: 0 0 0 160px;
+      padding: 80px 0 0 160px;
       width: 65%;
     }
   }

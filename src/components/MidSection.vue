@@ -1,6 +1,6 @@
 <template>
   <div class="mid">
-    <div class="mid__top">
+    <div class="mid__top pd-arch">
       <h2 class="mid__top-title --title">
         <span>Why choose</span>
         <span>Easybank?</span>
@@ -10,7 +10,7 @@
         hub. Control your finances like never before.
       </p>
     </div>
-    <div class="mid__bot">
+    <div class="mid__bot card-struct">
       <div class="mid__card" v-for="card in cards" v-bind:key="card.title">
         <img v-bind:src="card.icon" v-bind:alt="card.alt" class="mid__card-icon" />
         <h3 class="mid__card-title --title">{{ card.title }}</h3>
@@ -67,18 +67,6 @@ export default {
   position: relative;
   z-index: 1;
 
-  &__top {
-    padding: 2em 2em 0 2em;
-
-    @media screen and (min-width: 768px) {
-      padding: 5em 5em 0 5em;
-    }
-
-    @media screen and (min-width: 1280px) {
-      padding: 110px 160px 0 160px;
-    }
-  }
-
   &__top-title {
     display: flex;
     flex-direction: column;
@@ -104,23 +92,7 @@ export default {
   }
 
   &__bot {
-    margin-top: 3em;
-    padding: 0 2em 0 2em;
-
-    @media screen and (min-width: 768px) {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-column-gap: 2em;
-      text-align: justify;
-      padding: 0 5em 0 5em;
-    }
-
-    @media screen and (min-width: 1280px) {
-      grid-template-columns: repeat(4, 1fr);
-      grid-column-gap: 2.5em;
-      padding: 0 160px 0 160px;
-      text-align: start;
-    }
+    padding-bottom: 1rem;
   }
 
   &__card-title {
