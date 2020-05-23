@@ -1,12 +1,13 @@
 <template>
   <div class="attribution">
-    Challenge by
+    Coded by
     <a
-      href="https://www.frontendmentor.io?ref=challenge"
+      href="https://github.com/awexli/easybank-landing"
       target="_blank"
       rel="noopener"
-    >Frontend Mentor</a>. Coded by
-    <a href="#">Your Name Here</a>.
+    >
+      Alex Li
+    </a>
   </div>
 </template>
 
@@ -20,8 +21,10 @@ export default {
 .attribution {
   font-size: 11px;
   text-align: center;
+  background-color: $dark-blue;
+  color: $gray-blue;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: $lime-green;
 }
 </style>

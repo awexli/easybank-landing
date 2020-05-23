@@ -35,7 +35,7 @@ body {
   display: none;
   font-family: 'Public Sans', sans-serif;
   height: 48px;
-  width: 155px;
+  width: 180px;
   border-style: none;
   border-radius: 2em;
   background: linear-gradient(90deg, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
@@ -55,7 +55,7 @@ body {
     padding: 5em 5em 0 5em;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1440px) {
     padding: 110px 160px 0 160px;
   }
 }
@@ -74,8 +74,11 @@ body {
 
   @media screen and (min-width: 1280px) {
     grid-template-columns: repeat(4, 1fr);
-    padding: 0 160px 0 160px;
     text-align: start;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding: 0 160px 0 160px;
   }
 }
 

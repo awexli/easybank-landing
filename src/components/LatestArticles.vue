@@ -6,7 +6,11 @@
     <div class="articles__card-wrapper card-struct">
       <div class="articles__card" v-for="card in cards" v-bind:key="card.title">
         <div class="articles__img-container">
-          <img v-bind:src="card.img" v-bind:alt="card.alt" class="articles__card-image" />
+          <img
+            v-bind:src="card.img"
+            v-bind:alt="card.alt"
+            class="articles__card-image"
+          />
         </div>
         <div class="articles__card-bot">
           <p class="articles__card-author">By {{ card.author }}</p>
@@ -64,6 +68,7 @@ export default {
 
 <style lang="scss" scoped>
 .articles {
+  padding-bottom: 3rem;
   &__card {
     display: flex; // consistent img height
     flex-direction: column; // consistent img height

@@ -1,6 +1,6 @@
 <template>
   <div class="nav-bar">
-    <img src="../assets/logo.svg" alt="easybank logo" />
+    <img v-bind:src="logo" alt="easybank logo" />
     <button type="button" aria-label="menu" class="nav-bar__btn">
       <div class="nav-bar__burger"></div>
     </button>
@@ -22,6 +22,10 @@ export default {
       type: String,
       required: true,
       default: "Request Invite"
+    },
+    logo: {
+      type: String,
+      required: true
     }
   },
   data() {
