@@ -93,7 +93,7 @@ body {
   color: $gray-blue;
   line-height: 1.6em;
 
-  @media screen and (min-width: 500px) and (max-width: 767px) {
+  @media screen and (min-width: 500px) and (max-width: 599px) {
     padding-left: 20%;
     padding-right: 20%;
   }
