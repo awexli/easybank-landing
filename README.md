@@ -1,4 +1,12 @@
-# easybank_landing
+# Frontend Mentor - Easybank landing page ([LIVE](https://easybank-landing.awexli.now.sh/))
+
+![Design preview for the Easybank landing page coding challenge](./src/assets/_design/desktop-preview.jpg)
+
+## Welcome! 👋
+
+Thanks for checking out my solution to this front-end coding challenge.
+
+[Frontend Mentor](https://www.frontendmentor.io) challenges allow you to improve your skills in a real-life workflow.
 
 ## Project setup
 ```
