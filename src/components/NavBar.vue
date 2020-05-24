@@ -46,7 +46,6 @@ export default {
   width: inherit;
   max-width: inherit;
   top: 0;
-  overflow: hidden;
   z-index: 10;
 
   @media screen and (min-width: 768px) {
