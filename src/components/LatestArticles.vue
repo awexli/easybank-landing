@@ -112,6 +112,11 @@ export default {
   &__card-title {
     font-size: 1em;
     margin-bottom: 8px;
+    transition: color ease 0.2s;
+    &:hover {
+      cursor: pointer;
+      color: $lime-green;
+    }
   }
 
   &__card-sub {

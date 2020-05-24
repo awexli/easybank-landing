@@ -75,6 +75,7 @@ export default {
     border-radius: 8px;
 
     @media screen and (min-width: 1024px) {
+      position: inherit;
       padding: 0;
       margin: 0;
     }
@@ -82,6 +83,7 @@ export default {
 
   &__menu-list {
     @media screen and (min-width: 1024px) {
+      position: inherit;
       display: flex;
       justify-content: center;
     }
@@ -93,13 +95,48 @@ export default {
 
     @media screen and (min-width: 1024px) {
       font-size: 15px;
-      padding: 8px;
+      padding: 5px;
+      width: 5rem;
+      margin: 5px;
+
+      &::after {
+        content: "";
+        visibility: visible;
+        position: absolute;
+        opacity: 0;
+        bottom: 0;
+        background: linear-gradient(
+          90deg,
+          hsl(136, 65%, 51%),
+          hsl(192, 70%, 51%)
+        );
+        height: 4px;
+        width: 0;
+        border-radius: 5px;
+        transition: width ease 0.4s, opacity ease 0.4s;
+        display: block;
+      }
+
+      &:hover {
+        &::after {
+          visibility: visible;
+          opacity: 1;
+          display: block;
+          width: 4.2rem;
+        }
+      }
+
+      &:hover a {
+        color: $dark-blue;
+        font-weight: 600;
+      }
     }
 
     a {
-      color: hsl(233, 26%, 24%);
+      color: $gray-blue;
       text-decoration: none;
       padding: inherit;
+      transition: color ease 0.3s;
     }
   }
 }

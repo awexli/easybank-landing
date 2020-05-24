@@ -176,6 +176,12 @@ export default {
 
   &__social-icon {
     padding: 0 8px;
+
+    &:hover {
+      cursor: pointer;
+      filter: invert(19%) sepia(11%) saturate(5794%) hue-rotate(94deg)
+        brightness(99%) contrast(59%);
+    }
   }
 
   &__list {
@@ -197,6 +203,10 @@ export default {
     color: $light-gray-blue;
     text-decoration: none;
     font-size: 15px;
+    &:hover {
+      cursor: pointer;
+      color: #33ca97;
+    }
   }
 
   &__copyright {

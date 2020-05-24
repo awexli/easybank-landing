@@ -23,6 +23,10 @@ export default {
   text-align: center;
   background-color: $dark-blue;
   color: $gray-blue;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
 .attribution a {
   color: $lime-green;

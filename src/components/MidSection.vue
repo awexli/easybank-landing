@@ -12,7 +12,11 @@
     </div>
     <div class="mid__bot card-struct">
       <div class="mid__card" v-for="card in cards" v-bind:key="card.title">
-        <img v-bind:src="card.icon" v-bind:alt="card.alt" class="mid__card-icon" />
+        <img
+          v-bind:src="card.icon"
+          v-bind:alt="card.alt"
+          class="mid__card-icon"
+        />
         <h3 class="mid__card-title --title">{{ card.title }}</h3>
         <p class="mid__card-description --sub">{{ card.desc }}</p>
       </div>
