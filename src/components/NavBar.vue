@@ -2,7 +2,7 @@
   <div class="nav-bar">
     <img v-bind:src="logo" alt="easybank logo" />
     <button type="button" aria-label="menu" class="nav-bar__btn">
-      <div class="nav-bar__burger"></div>
+      <span class="nav-bar__burger"></span>
     </button>
     <NavMenu />
     <button class="request-btn" type="button">{{ requestBtn }}</button>
