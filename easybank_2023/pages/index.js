@@ -10,9 +10,14 @@ import iconOnlineBanking from '../public/icon-online.svg';
 import iconSimpleBudgeting from '../public/icon-budgeting.svg';
 import iconFastOnboarding from '../public/icon-onboarding.svg';
 import iconOpenApi from '../public/icon-api.svg';
+import articleCurrency from '../public/image-currency.jpg';
+import articleRestaurant from '../public/image-restaurant.jpg';
+import articlePlane from '../public/image-plane.jpg';
+import articleConfetti from '../public/image-confetti.jpg';
 
 import Button from '@/components/button';
 import { InfoBlock } from '@/components/info-block';
+import { ArticleCard } from '@/components/article-card';
 
 export default function Home() {
   return (
@@ -72,7 +77,7 @@ export default function Home() {
       {/* intro section */}
       <section
         className={clsx(
-          'pb-20',
+          'bg-[#fcfcfc] pb-20',
           'relative',
           'tablet:w-full',
           'laptop_xl:translate-y-0 laptop_xl:translate-x-0',
@@ -164,8 +169,8 @@ export default function Home() {
               </h1>
               <p
                 className={clsx(
-                  'max-w-xs px-0 py-6 text-center text-sm',
-                  'laptop_xl:text-justify laptop_xl:text-start laptop_xl:text-lg',
+                  'max-w-xs px-0 py-6 text-center text-sm	text-[#808393]',
+                  'laptop_xl:text-start laptop_xl:text-lg',
                   'laptop_xl:max-w-md laptop_xl:leading-relaxed'
                 )}
               >
@@ -182,7 +187,7 @@ export default function Home() {
       {/* Why choose easybank */}
       <section
         className={clsx(
-          'w-full bg-[#fafafa] py-16',
+          'w-full bg-[#f9fafb] py-16',
           'laptop_xl:px-20',
           'desktop:px-40 desktop:py-28'
         )}
@@ -194,14 +199,17 @@ export default function Home() {
           )}
         >
           <h2 className="py-4 text-4xl text-[#2d314d]">Why choose Easybank?</h2>
-          <p className="max-w-xs text-sm laptop_xl:max-w-lg desktop:max-w-2xl desktop:text-lg">
+          <p className="max-w-xs text-sm text-[#808393] laptop_xl:max-w-lg desktop:max-w-2xl desktop:text-lg">
             We leverage Open Banking to turn your bank account into your
             financial hub. Control your finances like never before.
           </p>
         </div>
 
         <div
-          className={clsx('flex flex-col justify-center', 'laptop_xl:flex-row laptop_xl:justify-between')}
+          className={clsx(
+            'flex flex-col justify-center',
+            'laptop_xl:flex-row laptop_xl:justify-between'
+          )}
         >
           <InfoBlock
             imageSource={iconOnlineBanking}
@@ -230,6 +238,58 @@ export default function Home() {
             description={
               'Manage your savings, investments, pension, and much more from one account. Tracking your money has never been easier.'
             }
+          />
+        </div>
+      </section>
+      <section
+        className={clsx(
+          'w-full bg-[#fcfcfc]	py-16',
+          'laptop_xl:px-20',
+          'desktop:px-40 desktop:py-28'
+        )}
+      >
+        <h2 className="py-4 text-4xl text-[#2d314d] text-center laptop_xl:text-left">Latest Articles</h2>
+        <div
+          className={clsx(
+            'flex flex-col items-center text-left',
+            'laptop_xl:flex-row laptop_xl:items-start laptop_xl:justify-between'
+          )}
+        >
+          <ArticleCard
+            imageSource={articleCurrency}
+            author={'Claire Robinson'}
+            title={'Receive money in any currency with no fees'}
+            description={
+              "The world is getting smaller and we're becoming more mobile. So why should you be forced to only receive money in a single ..."
+            }
+            alt="Photo of cash bills in a pile"
+          />
+          <ArticleCard
+            imageSource={articleRestaurant}
+            author={'Wilson Hutton'}
+            title={'Treat yourself without worrying about money'}
+            description={
+              'Our simple budgeting feature allows you to separate out your spending and set realistic limits each month. That means you ...'
+            }
+            alt="Photo of a restaurant dish"
+          />
+          <ArticleCard
+            imageSource={articlePlane}
+            author={'Wilson Hutton'}
+            title={'Take your Easybank card wherever you go'}
+            description={
+              'We want you to enjoy your travels. This is why we don’t charge any fees on purchases while you’re abroad. We’ll even show you ...'
+            }
+            alt={"Photo of a plane's wing in the sky"}
+          />
+          <ArticleCard
+            imageSource={articleConfetti}
+            author={'Claire Robinson'}
+            title={'Our invite-only Beta accounts are now live!'}
+            description={
+              'After a lot of hard work by the whole team, we’re excited to launch our closed beta. It’s easy to request an invite through the site ...'
+            }
+            alt={'Photo of confetti'}
           />
         </div>
       </section>

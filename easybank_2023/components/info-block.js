@@ -6,7 +6,7 @@ export const InfoBlock = ({ imageSource, title, description }) => {
     <div
       className={clsx(
         'mt-12 flex flex-col items-center text-center',
-        'laptop_xl:block laptop_xl:text-left'
+        'laptop_xl:block laptop_xl:text-left laptop_xl:w-60'
       )}
     >
       <Image
@@ -16,7 +16,7 @@ export const InfoBlock = ({ imageSource, title, description }) => {
         height={72}
       />
       <h3 className="py-4 text-2xl text-[#2d314d]">{title}</h3>
-      <p className="max-w-xs text-sm laptop_xl:max-w-[85%]">{description}</p>
+      <p className="max-w-xs text-sm text-[#808393] laptop_xl:text-md">{description}</p>
     </div>
   );
 };
