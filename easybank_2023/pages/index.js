@@ -2,6 +2,7 @@ import Image from 'next/image';
 import clsx from 'clsx';
 
 import logo from '../public/logo.svg';
+import logoFooter from '../public/logo-footer.svg';
 import iconBurger from '../public/icon-hamburger.svg';
 import bgIntroMobile from '../public/bg-intro-mobile.svg';
 import bgIntroDesk from '../public/bg-intro-desktop.svg';
@@ -14,6 +15,11 @@ import articleCurrency from '../public/image-currency.jpg';
 import articleRestaurant from '../public/image-restaurant.jpg';
 import articlePlane from '../public/image-plane.jpg';
 import articleConfetti from '../public/image-confetti.jpg';
+import iconFacebook from '../public/icon-facebook.svg';
+import iconInstagram from '../public/icon-instagram.svg';
+import iconPinterest from '../public/icon-pinterest.svg';
+import iconTwitter from '../public/icon-twitter.svg';
+import iconYoutube from '../public/icon-youtube.svg';
 
 import Button from '@/components/button';
 import { InfoBlock } from '@/components/info-block';
@@ -99,6 +105,7 @@ export default function Home() {
           alt="Logo"
           width={767}
           height={939}
+          priority={true}
         />
 
         {/* background images */}
@@ -128,6 +135,7 @@ export default function Home() {
               alt="Logo"
               width={775}
               height={823}
+              priority={true}
             />
             <Image
               className={clsx(
@@ -267,6 +275,66 @@ export default function Home() {
           </>
         }
       />
+      <footer
+        className={clsx(
+          `w-full bg-[#2d314d]	py-8`,
+          'laptop_xl:px-20',
+          'desktop:px-40'
+        )}
+      >
+        <div className="flex h-full flex-col items-center laptop_xl:flex-row laptop_xl:justify-between">
+          <div className="">
+            <Image
+              src={logoFooter}
+              alt="Logo"
+              width={139}
+              height={20}
+              className="pb-8"
+            />
+            <div className="flex justify-between">
+              <Image src={iconFacebook} alt="facebook" width={20} height={20} />
+              <Image src={iconYoutube} alt="youtube" width={20} height={20} />
+              <Image src={iconTwitter} alt="twitter" width={20} height={20} />
+              <Image
+                src={iconPinterest}
+                alt="pinterest"
+                width={20}
+                height={20}
+              />
+              <Image
+                src={iconInstagram}
+                alt="instagram"
+                width={20}
+                height={20}
+              />
+            </div>
+          </div>
+
+          <div className="py-8 text-white laptop_xl:flex laptop_xl:w-96">
+            <div className="py-4 laptop_xl:py-0 laptop_xl:mr-36">
+              <ul className="flex h-24 flex-col justify-between text-center laptop_xl:text-left">
+                <li>About us</li>
+                <li>Contact</li>
+                <li>Blog</li>
+              </ul>
+            </div>
+            <div>
+              <ul className="flex h-24 flex-col justify-between text-center laptop_xl:text-left">
+                <li>Careers</li>
+                <li>Support</li>
+                <li>Privacy Policy</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="flex flex-col items-center laptop_xl:items-end">
+            <Button />
+            <span className="pt-8 text-[#808393]">
+              © Easybank. All Rights Reserved
+            </span>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
