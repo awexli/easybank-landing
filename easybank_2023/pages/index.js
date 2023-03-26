@@ -25,6 +25,7 @@ import Button from '@/components/button';
 import { InfoBlock } from '@/components/info-block';
 import { ArticleCard } from '@/components/article-card';
 import { Section } from '@/components/section';
+import { NavMenuList } from '@/components/nav-menu-list';
 
 export default function Home() {
   return (
@@ -59,19 +60,18 @@ export default function Home() {
             'desktop:flex desktop:items-center'
           )}
         >
-          <ul className="flex w-full justify-between">
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact</li>
-            <li>Blog</li>
-            <li>Careers</li>
+          <ul className="relative flex w-full justify-between">
+            <NavMenuList
+              items={['Home', 'About', 'Contact', 'Blog', 'Careers']}
+            />
           </ul>
         </div>
         <div
           className={clsx(
             'flex items-center',
             'laptop_xl:hidden',
-            'desktop:hidden'
+            'desktop:hidden',
+            'hover:cursor-pointer'
           )}
         >
           <Image src={iconBurger} alt="Hamburger" width={24} height={11} />
@@ -292,37 +292,69 @@ export default function Home() {
               className="pb-8"
             />
             <div className="flex justify-between">
-              <Image src={iconFacebook} alt="facebook" width={20} height={20} />
-              <Image src={iconYoutube} alt="youtube" width={20} height={20} />
-              <Image src={iconTwitter} alt="twitter" width={20} height={20} />
+              <Image
+                src={iconFacebook}
+                alt="facebook"
+                width={20}
+                height={20}
+                className="hover:cursor-pointer"
+              />
+              <Image
+                src={iconYoutube}
+                alt="youtube"
+                width={20}
+                height={20}
+                className="hover:cursor-pointer"
+              />
+              <Image
+                src={iconTwitter}
+                alt="twitter"
+                width={20}
+                height={20}
+                className="hover:cursor-pointer"
+              />
               <Image
                 src={iconPinterest}
                 alt="pinterest"
                 width={20}
                 height={20}
+                className="hover:cursor-pointer"
               />
               <Image
                 src={iconInstagram}
                 alt="instagram"
                 width={20}
                 height={20}
+                className="hover:cursor-pointer"
               />
             </div>
           </div>
 
           <div className="py-8 text-white laptop_xl:flex laptop_xl:w-96">
-            <div className="py-4 laptop_xl:py-0 laptop_xl:mr-36">
+            <div className="py-4 laptop_xl:mr-36 laptop_xl:py-0">
               <ul className="flex h-24 flex-col justify-between text-center laptop_xl:text-left">
-                <li>About us</li>
-                <li>Contact</li>
-                <li>Blog</li>
+                <li className="hover:cursor-pointer hover:text-[#31d35c]">
+                  About us
+                </li>
+                <li className="hover:cursor-pointer hover:text-[#31d35c]">
+                  Contact
+                </li>
+                <li className="hover:cursor-pointer hover:text-[#31d35c]">
+                  Blog
+                </li>
               </ul>
             </div>
             <div>
               <ul className="flex h-24 flex-col justify-between text-center laptop_xl:text-left">
-                <li>Careers</li>
-                <li>Support</li>
-                <li>Privacy Policy</li>
+                <li className="hover:cursor-pointer hover:text-[#31d35c]">
+                  Careers
+                </li>
+                <li className="hover:cursor-pointer hover:text-[#31d35c]">
+                  Support
+                </li>
+                <li className="hover:cursor-pointer hover:text-[#31d35c]">
+                  Privacy Policy
+                </li>
               </ul>
             </div>
           </div>
