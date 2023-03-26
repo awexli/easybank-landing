@@ -102,7 +102,7 @@ export default function Home() {
             'desktop:-right-[8.2rem]'
           )}
           src={mockup}
-          alt="Logo"
+          alt=""
           width={767}
           height={939}
           priority={true}
@@ -132,7 +132,7 @@ export default function Home() {
                 'laptop_xl:hidden'
               )}
               src={bgIntroMobile}
-              alt="Logo"
+              alt=""
               width={775}
               height={823}
               priority={true}
@@ -146,7 +146,7 @@ export default function Home() {
                 'desktop:right-[-27.5rem]'
               )}
               src={bgIntroDesk}
-              alt="Logo"
+              alt=""
               width={1271}
               height={1034}
             />
